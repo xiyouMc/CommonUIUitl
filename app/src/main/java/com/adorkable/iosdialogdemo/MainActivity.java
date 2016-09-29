@@ -7,9 +7,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.adorkable.iosdialog.ActionSheetDialog;
-import com.adorkable.iosdialog.ActionSheetDialog.OnSheetItemClickListener;
-import com.adorkable.iosdialog.ActionSheetDialog.SheetItemColor;
+import com.vivavideo.mobile.commonui.ActionSheetDialog;
+import com.vivavideo.mobile.commonui.ActionSheetDialog.OnSheetItemClickListener;
+import com.vivavideo.mobile.commonui.ActionSheetDialog.SheetItemColor;
 import com.adorkable.iosdialog.AlertDialog;
 
 public class MainActivity extends Activity implements OnClickListener {
