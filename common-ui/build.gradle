@@ -23,7 +23,7 @@ apply plugin: 'signing'
 
 //定义GroupID和Version，ArtefactID会自动使用Project名
 group = 'com.vivavideo.mobile'
-version = '2.7'
+version = '2.9'
 
 artifacts {
     archives file('build/libs/' + project.name + '.jar')
@@ -81,12 +81,12 @@ task buildJar(type: Jar) {
     //去除路径集下部分的资源
 //    exclude "org/chaos/demo/jar/MainActivity.class"
 //    exclude "org/chaos/demo/jar/MainActivity\$*.class"
-    exclude "com/vivavideo/mobile/" + project.name + "/BuildConfig.class"
-    exclude "com/vivavideo/mobile/" + project.name + "/BuildConfig\$*.class"
+    exclude "com/vivavideo/mobile/commonui/BuildConfig.class"
+    exclude "com/vivavideo/mobile/commonui/BuildConfig\$*.class"
     exclude "**/R.class"
     exclude "**/R\$*.class"
     //只导入资源路径集下的部分资源
-    include "com/VivaVideo/mobile/" + project.name + "/**/*.class"
+    include "com/vivavideo/mobile/commonui/**/*.class"
     //注: exclude include 支持可变长参数
 }
 

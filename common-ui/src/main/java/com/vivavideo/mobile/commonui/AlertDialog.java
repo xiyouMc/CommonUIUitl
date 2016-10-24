@@ -4,8 +4,6 @@ package com.vivavideo.mobile.commonui;
  * Created by xiyoumc on 9/29/16.
  */
 
-import com.vivavideo.mobile.commonui.R;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.view.Display;
@@ -174,6 +172,10 @@ public class AlertDialog {
     public void show() {
         setLayout();
         dialog.show();
+    }
+
+    public void dismiss() {
+        dialog.dismiss();
     }
 }
 
